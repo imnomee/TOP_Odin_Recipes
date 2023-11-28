@@ -3,6 +3,7 @@
     width: 800px;
     background-color: rgb(142, 142, 228);
     letter-spacing: 1px;
+    border: 2px solid red;
 }
 
 h1 {
