@@ -1,9 +1,12 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 800px;
     background-color: rgb(142, 142, 228);
     letter-spacing: 1px;
-    border: 2px solid red;
+}
+body {
+    border: 2px solid blue;
+    margin: 50px auto;
+    width: 90%;
 }
 
 h1 {
@@ -16,22 +19,44 @@ h1 {
 h2 {
     text-decoration: underline;
 }
+
 p {
     font-size: 20px;
 }
 
-li {
-    font-size: 18px;
-    line-height: 30px;
-    list-style: inside;
+.container {
+    display: flex;
+    flex-direction: row; /*direction of the items: default is row */
+    /* alignnment */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* margin-bottom: 10px; */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container_item {
+    /* flex: 1; */
+    border: 2px solid blue;
 }
 
+.one,
+.three {
+    background-color: rgb(220, 220, 151);
+    color: black;
+    flex: 1;
+}
+
+.two {
+    background: rgb(155, 227, 155);
+    color: bue;
+}
 a,
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: white;
 }
 
 img {
